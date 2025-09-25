@@ -1,12 +1,39 @@
-# React + Vite
+Welcome to my personal portfolio! This project showcases my skills, projects, and experience as a B.Tech CSE student. It is built with **React**, **Tailwind CSS**, and **Framer Motion** for smooth animations.  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## Table of Contents
+- [About](#about)  
+- [Features](#features)  
+- [Technologies](#technologies)  
+- [Installation](#installation)  
+- [Usage](#usage)  
+- [Projects](#projects)  
+- [Contact](#contact)  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## About
+I am a B.Tech student in Computer Science (3rd Year) with a passion for building **clean, responsive, and modern UI designs**. I enjoy making projects of any scale and solving complex problems efficiently. This portfolio highlights my skills, projects, and personal journey as a developer.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Features
+- Fully responsive **monochromatic design** (black/white theme)  
+- **Dark mode toggle** for a modern user experience  
+- Smooth **animations** using Framer Motion  
+- Sections include:
+  - About Me  
+  - Skills  
+  - Projects  
+  - Contact  
+
+---
+
+## Technologies
+- **Frontend:** React.js, Tailwind CSS  
+- **Animations:** Framer Motion  
+- **Icons & Assets:** React Icons, local assets  
+- **Others:** Resume download link, dark mode support  
+
+---
