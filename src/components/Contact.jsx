@@ -37,7 +37,7 @@ export default function Connect() {
           transition={{ type: "spring", stiffness: 300 }}
         >
           <Button
-            className="w-30 h-10 bg-black text-white hover:bg-black/90 flex items-center gap-2 px-6 py-3 rounded-xs text-lg"
+            className="w-30 h-10 bg-black text-white hover:bg-black/90 flex items-center gap-2 px-6 py-3 rounded-4xl text-lg"
             asChild
             
           >
@@ -58,7 +58,7 @@ export default function Connect() {
           transition={{ type: "spring", stiffness: 300 }}
         >
           <Button
-            className="w-35 h-10 bg-black text-white hover:bg-black/90 flex items-center gap-2 px-6 py-3 rounded text-lg"
+            className="w-35 h-10 bg-black text-white hover:bg-black/90 flex items-center gap-2 px-6 py-3 rounded-4xl text-lg"
             asChild
           >
             <a
@@ -79,7 +79,7 @@ export default function Connect() {
           transition={{ type: "spring", stiffness: 300 }}
         >
           <Button
-            className="w-30 h-10 bg-black text-white hover:bg-black/90 flex items-center gap-2 px-6 py-3 rounded text-lg"
+            className="w-30 h-10 bg-black text-white hover:bg-black/90 flex items-center gap-2 px-6 py-3 rounded-4xl text-lg"
             asChild
           >
             <a

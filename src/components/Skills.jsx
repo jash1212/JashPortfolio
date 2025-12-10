@@ -38,10 +38,10 @@ export default function Skills() {
         <span className="font-bold text-3xl text-gray-600"> #</span>
       </h2>
 
-      <div className="flex flex-wrap gap-3">
+       <div className="flex flex-wrap gap-4">
         {skillsList.map((skill, idx) => {
-          const Icon = skill.Icon;
-          const isHover = hovered === idx;
+          const Icon = skill.Icon
+          const isHover = hovered === idx
 
           return (
             <motion.div
@@ -49,22 +49,62 @@ export default function Skills() {
               onMouseEnter={() => setHovered(idx)}
               onMouseLeave={() => setHovered(null)}
               initial={{ opacity: 0, y: 6 }}
-              animate={{ opacity: 1, y: 0 }}
-             whileHover={{ y: -8, scale: 1.05 }}
-          transition={{ type: "spring", stiffness: 300 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              whileHover={{ y: -6, scale: 1.04 }}
+              transition={{ type: "spring", stiffness: 260 }}
             >
-              <Card className="px-3 py-2 flex items-center gap-2 border border-gray-200 rounded-xs shadow-sm bg-white cursor-pointer">
+              <Card
+                className="
+                  relative px-5 py-2 flex items-center gap-3 rounded-3xl cursor-pointer 
+                  border border-black/10
+                  bg-white/30
+                  backdrop-blur-2xl
+                  shadow-[inset_0_0_20px_rgba(255,255,255,0.4),0_4px_20px_rgba(0,0,0,0.08)]
+                  overflow-hidden
+                "
+              >
+                {/* Soft highlight */}
+                <div className="absolute inset-0 bg-gradient-to-br from-white/70 via-transparent to-transparent opacity-40 pointer-events-none" />
+
+                {/* Subtle dark vignette */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-black/10 via-transparent to-transparent opacity-20 pointer-events-none" />
+
+                {/* Liquid Ripple */}
+                {isHover && (
+                  <motion.div
+                    initial={{ scale: 0, opacity: 0.5 }}
+                    animate={{ scale: 1.8, opacity: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    className="
+                      absolute w-24 h-24 rounded-full 
+                      bg-white/40 blur-2xl 
+                      pointer-events-none
+                      left-1/2 top-1/2 
+                      -translate-x-1/2 -translate-y-1/2
+                    "
+                  />
+                )}
+
+                {/* Gloss shine on hover */}
+                <motion.div
+                  className="absolute -inset-10 bg-gradient-to-r from-transparent via-white/40 to-transparent rotate-12 opacity-0"
+                  animate={{ opacity: isHover ? 1 : 0 }}
+                  transition={{ duration: 0.4 }}
+                />
+
                 <Icon
                   size={20}
                   style={{ color: isHover ? skill.color : "#0f172a" }}
-                  className="transition-colors duration-200"
+                  className="transition-all duration-300 drop-shadow-sm"
                 />
-                <span className="text font-medium text-black">
+
+                <span className="font-medium text-black drop-shadow-sm">
                   {skill.name}
                 </span>
               </Card>
             </motion.div>
-          );
+          )
         })}
       </div>
     </section>

@@ -4,9 +4,8 @@ import { motion } from "framer-motion";
 // About.jsx with animations (monochromatic)
 
 export default function About({
-  title = "Frontend Developer",
-  location = "Your City, Country",
-  bio = `I'm a passionate B.Tech student in Computer Science (3rd year) who loves building clean, responsive, and modern designs. I enjoy making cool projects, whether they're small experiments or larger applications. With strong problem-solving skills, I focus on writing efficient code and turning ideas into reality.`,
+ 
+  bio = `I'm a passionate B.E. student who loves solving complex problems and turn ideas into reliable, scalable software.. I enjoy making cool projects, whether they're small experiments or larger applications. With strong problem-solving skills, I focus on writing efficient code and turning ideas into reality.`,
 }) {
   return (
     <motion.section

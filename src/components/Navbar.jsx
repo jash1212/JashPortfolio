@@ -1,7 +1,5 @@
-import React from "react"
 import { motion } from "framer-motion"
-import jashPic from "../assets/jashPic.jpg"
-import Resume from "../assets/JashCV.pdf"
+import Resume from "../assets/J_cv.pdf"
 
 export default function Navbar() {
   const container = {
@@ -29,7 +27,7 @@ export default function Navbar() {
         {/* Left: Name / Logo */}
         <motion.a
           variants={item}
-          href="#hero"
+          href="/"
           className="
             flex items-center gap-3 
             font-bold 
